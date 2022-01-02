@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
+    <!--    Bootstrap link from webjars-->
+    <link type="text/css" rel="stylesheet" th:href="@{\webjars\bootstrap\4.3.1\css\bootstrap.css}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script th:src="@{\webjars\jquery\3.0.0\jquery.js}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+</head>
+<body>
+<div class="container-fluid text-center">
+    <h1>Welcome</h1>
+    <a class="h2" th:href="@{/properties}">Manage Users</a>
+</div>
+
+</body>
+</html>
