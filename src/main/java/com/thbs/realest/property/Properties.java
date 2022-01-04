@@ -21,9 +21,9 @@ public class Properties {
     @Column(nullable = false, length = 50, name = "price")
     private double price;
 
-    /*public Properties() {
+/*public Properties() {
         super();
-    }*
+    }*/
 
     /*public Properties(String propName, String address, String details, double price) {
         this.propName = propName;
@@ -40,11 +40,11 @@ public class Properties {
         this.price = price;
     }*/
 
-    public int getPropId() {
+    public int getProperty_id() {
         return property_id;
     }
 
-    public void setPropId(int propId) {
+    public void setProperty_id(int propId) {
         this.property_id = propId;
     }
 
@@ -79,4 +79,12 @@ public class Properties {
     public void setPrice(double price) {
         this.price = price;
     }
+
+   /* public Boolean getEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(Boolean enabled) {
+        this.enabled = enabled;
+    }*/
 }

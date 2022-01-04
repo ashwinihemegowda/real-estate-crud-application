@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>[[${pageTitle}]]</title>
+  <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
+  <!--    Bootstrap link from webjars-->
+  <link type="text/css" rel="stylesheet" th:href="@{\webjars\bootstrap\4.3.1\css\bootstrap.css}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <script th:src="@{\webjars\jquery\3.0.0\jquery.js}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+</head>
+<body>
+<div class="container-fluid">
+  <div class="text-center"><h2>[[${pageTitle}]]</h2></div>
+
+  <form th:action="@{/save}" method="post" th:object="${property}" style="max-width: 500px; margin: 0 auto;">
+    <input type="hidden" th:field="*{property_id}" />
+    <div class="border border-secondary rounded p-3">
+      <div class="form-group row">
+        <label class="col-sm-4 col-form-label">Property Name</label>
+        <div class="sol-sm-8">
+          <input type="text" th:field="*{propName}" class="form-control"/>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-4 col-form-label">Address</label>
+        <div class="sol-sm-8">
+          <input type="text" th:field="*{address}" class="form-control"/>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-4 col-form-label">Details</label>
+        <div class="sol-sm-8">
+          <input type="text" th:field="*{details}" class="form-control"/>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-4 col-form-label">Price</label>
+        <div class="sol-sm-8">
+          <input type="text" th:field="*{price}" class="form-control"/>
+        </div>
+      </div>
+      <div>
+        <button type="submit" class="btn btn-primary">Update</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>

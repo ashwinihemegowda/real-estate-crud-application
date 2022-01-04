@@ -29,20 +29,20 @@
                   <th>Address</th>
                   <th>Details</th>
                   <th>Price</th>
-                  <th></th>
+                  <th>Action</th>
               </tr>
             </thead>
             <tbody>
             <th:block th:each="properties:${listProperties}">
                 <tr>
-                    <td>[[${properties.propId}]]</td>
+                    <td>[[${properties.property_id}]]</td>
                     <td>[[${properties.propName}]]</td>
                     <td>[[${properties.address}]]</td>
                     <td>[[${properties.details}]]</td>
                     <td>[[${properties.price}]]</td>
                     <td>
-                        <a class="h4 mr-3" th:href="@{'/properties/edit/' + ${properties.propId}}">Update</a>
-                        <a class="h4" th:href="@{'/delete/' + ${properties.propId}}">Delete</a>
+                        <a class="h4 mr-3" th:href="@{'/properties/edit/' + ${properties.property_id}}">Update</a>
+                        <a class="h4" th:href="@{'/delete/' + ${properties.property_id}}">Delete</a>
                     </td>
                 </tr>
             </th:block>

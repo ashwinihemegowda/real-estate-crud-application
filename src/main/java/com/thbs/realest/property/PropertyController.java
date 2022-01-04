@@ -28,8 +28,8 @@ public class PropertyController {
     public String addProperty(Model model){
         Properties prop=new Properties();
         model.addAttribute("property", prop);
-        model.addAttribute("pageTitle", "Add New Property");
-        return "appProperty";
+        //model.addAttribute("pageTitle", "Add New Property");
+        return "addProperty";
     }
 
     @PostMapping("/save")
@@ -44,7 +44,7 @@ public class PropertyController {
         Properties prop=service.get(id);
         model.addAttribute("property", prop);
         model.addAttribute("pageTitle", "Edit Property (ID: "+id+")");
-        return "appProperty";
+        return "updateProperty";
     }
 
     @GetMapping("/delete/{id}")
