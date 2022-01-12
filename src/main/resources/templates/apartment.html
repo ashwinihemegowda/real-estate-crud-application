@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Rent Page</title>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
+    <!--    Bootstrap link from webjars-->
+    <link type="text/css" rel="stylesheet" th:href="@{\webjars\bootstrap\4.3.1\css\bootstrap.css}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script th:src="@{\webjars\jquery\3.0.0\jquery.js}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+    <style>
+    .cards-wrapper {
+
+      width:100%;
+    }
+    .card img {
+      max-height: 100%;
+      max-width: 100%;
+    }
+    .card {
+      margin: 0 0.5em;
+      box-shadow: 2px 6px 8px 0;
+      border: none;
+      border-radius: 0;
+      margin-bottom:10px;
+    }
+    .carousel-inner {
+      padding: 1em;
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+      background-color: #e1e1e1;
+      width: 5vh;
+      height: 5vh;
+      border-radius: 50%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    h6{
+      font-size:15px;
+    }
+    h2{
+    background-color: black;
+    color: antiquewhite;
+    text-transform:uppercase;
+    font-size:24px;
+    }
+    #column {
+  float: left;
+  width: 25%;
+  padding: 0 20px;
+}
+.row {margin: 0 -5px;}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  #column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  * {
+  box-sizing: border-box;
+}
+
+}
+
+</style>
+    <!--<style>
+        .column {
+          float: left;
+          padding: 0 10px;
+        }
+
+        .row {
+          margin: 0 -5px;
+        }
+        .row:after {
+          display: table;
+          clear: both;
+        }
+
+        .card {
+          box-shadow: 0 4px 8px 0;
+          padding: 16px;
+        }
+    </style>-->
+</head>
+<body>
+<center><h2>Apartment</h2></center>
+<!--<div class="row">-->
+<div class="row">
+    <div class="cards-wrapper">
+        <div id="column" class="card" th:each="property:${listProperties}">
+            <img class="card-img-top" th:src="@{img\for-rent-sign-in-front-of-new-house-149060607-1ddf9bfcf61141d08d0f5003277e902c.jpg}" alt="Card image cap">
+            <div class="card-body">
+                <h6>Property ID: [[${property.propertyId}]]</h6>
+                <h6>Category: [[${property.category}]]</h6>
+                <h6>Property Name: [[${property.propertyName}]]</h6>
+                <h6>City: [[${property.description}]]</h6>
+                <h6>Price: [[${property.price}]]</h6>
+                <a class="button" on th:href="@{'/viewdetails/' + ${property.propertyId}}" >Read More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

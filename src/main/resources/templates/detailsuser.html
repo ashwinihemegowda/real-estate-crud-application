@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Rent Page</title>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
+    <!--    Bootstrap link from webjars-->
+    <link type="text/css" rel="stylesheet" th:href="@{\webjars\bootstrap\4.3.1\css\bootstrap.css}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script th:src="@{\webjars\jquery\3.0.0\jquery.js}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+    <style>
+    .cards-wrapper {
+
+      width:100%;
+    }
+    .card img {
+      max-height: 100%;
+      max-width: 100%;
+    }
+    .card {
+      margin: 0 0.5em;
+      box-shadow: 2px 6px 8px 0;
+      border: none;
+      border-radius: 0;
+      margin-bottom:10px;
+    }
+    .carousel-inner {
+      padding: 1em;
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+      background-color: #e1e1e1;
+      width: 5vh;
+      height: 5vh;
+      border-radius: 50%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    h6{
+      font-size:15px;
+    }
+    h2{
+    background-color: black;
+    color: antiquewhite;
+    text-transform:uppercase;
+    font-size:24px;
+    }
+    #column {
+  float: left;
+  width: 30%;
+  padding: 0 20px;
+}
+.row {margin: 0 -5px;}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  #column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  * {
+  box-sizing: border-box;
+}
+.btn btn-primary btn-sm{
+ padding: 5px;
+}
+body {
+     background-color: navy !important;
+     font-size:20px;
+     }
+
+}
+
+</style>
+    <!--<style>
+        .column {
+          float: left;
+          padding: 0 10px;
+        }
+
+        .row {
+          margin: 0 -5px;
+        }
+        .row:after {
+          display: table;
+          clear: both;
+        }
+
+        .card {
+          box-shadow: 0 4px 8px 0;
+          padding: 16px;
+        }
+    </style>-->
+</head>
+<body>
+<center><h2>Details</h2></center>
+<!--<div class="row">-->
+
+<div class="row">
+    <div class="cards-wrapper">
+        <div id="column" class="card "  th:each="property:${details}">
+          <!-- <img class="card-img-top" th:src="[[${'property.data:image/jpeg;base64,'+{image}}]]" alt="image" class="card-img-top"> -->
+            <div class="card-body">
+                <table class="table-hover w-auto xlarge">
+                    <tbody>
+                    <tr>
+                        <th> <h4><b>Property details</b></h4></th>
+                    </tr>
+                    <tr>
+                        <th width="250">Property id</th>
+                        <td width="200"> [[${property.propertyId}]] </td>
+                    </tr>
+                    <tr>
+                        <th>Category</th>
+                        <td> [[${property.category}]] </td>
+                    </tr>
+                    <tr>
+                        <th>Property Name</th>
+                        <td >[[${property.propertyName}]]</td>
+                    </tr>
+                    <tr>
+                        <th>City</th>
+                        <td>[[${property.description}]]</td>
+                    </tr>
+                    <tr>
+                        <th>Price</th>
+                        <td>[[${property.price}]]</td>
+                    </tr>
+                    <tr>
+                        <th>Facilities</th>
+                        <td>[[${property.facilities}]]</td>
+                    </tr>
+                    <tr>
+                        <th> <h4><b>Owner Details</b></h4></th>
+                    </tr>
+                    <tr>
+                        <th>Owner Name</th>
+                        <td>[[${property.ownerName}]]</td>
+                    </tr>
+                    <tr>
+                        <th>Address</th>
+                        <td>[[${property.address}]]</td>
+                    </tr>
+                    <tr>
+                        <th>Contact No</th>
+                        <td>[[${property.contactNo}]]</td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td>[[${property.email}]]</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
