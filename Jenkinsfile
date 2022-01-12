@@ -8,7 +8,7 @@ pipeline {
 
     stage('Build Maven') {
       steps {
-        git branch: 'main', url: 'https://github.com/ashwinihemegowda/real-estate-crud-application'
+        git branch: 'nigil', url: 'https://github.com/ashwinihemegowda/real-estate-crud-application'
         sh "mvn -Dmaven.test.failure.ignore=true clean package"
       }
     }
