@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+
+<head>
+    <meta charset="UTF-8">
+    <title>[[${pageTitle}]]</title>
+
+<!--    <link rel="stylesheet"-->
+<!--          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"-->
+<!--          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"-->
+<!--          crossorigin="anonymous">-->
+
+
+    <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
+    <!--    Bootstrap link from webjars-->
+    <link type="text/css" rel="stylesheet" th:href="@{\webjars\bootstrap\4.3.1\css\bootstrap.css}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script th:src="@{\webjars\jquery\3.0.0\jquery.js}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+<div class="container-fluid">
+    <div class="text-center"><h2>Add New Property</h2></div>
+
+    <form th:action="@{/saveNewProperty}" method="post" th:object="${property}" enctype="multipart/form-data" style="max-width: 500px; margin: 0 auto;">
+        <div class="border border-secondary rounded p-3">
+            <div class="form-group row">
+                <label class="col-sm-4 col-form-label" >Category</label>
+                <div class="sol-sm-8">
+                    <select th:field="*{category}" class="form-control" required>
+                        <option th:value="'apartment'" th:text="Apartment"></option>
+                        <option th:value="'land'" th:text="land"></option>
+                        <option th:value="'rent'" th:text="rent"></option>
+                        <option th:value="'villa'" th:text="Villa"></option>
+                    </select>
+
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-4 col-form-label">Property Name</label>
+                <div class="sol-sm-8">
+                    <input type="text" th:field="*{propertyName}" class="form-control"/>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-4 col-form-label">Description</label>
+                <div class="sol-sm-8">
+                    <input type="text" th:field="*{description}" class="form-control"/>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-4 col-form-label">Price</label>
+                <div class="sol-sm-8">
+                    <input type="text" th:field="*{price}" class="form-control"/>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-4 col-form-label">Address</label>
+                <div class="sol-sm-8">
+                    <input type="text" th:field="*{address}" class="form-control"/>
+                </div>
+            </div>
+            <div class="form-group row">
+            <label class="col-sm-4 col-form-label">Facilities</label>
+            <div class="sol-sm-8">
+                <input type="text" th:field="*{facilities}" class="form-control"/>
+            </div>
+        </div><div class="form-group row">
+            <label class="col-sm-4 col-form-label">Owner Name</label>
+            <div class="sol-sm-8">
+                <input type="text" th:field="*{ownerName}" class="form-control"/>
+            </div>
+        </div>
+            <div class="form-group row">
+            <label class="col-sm-4 col-form-label">Contact No</label>
+            <div class="sol-sm-8">
+                <input type="text" th:field="*{contactNo}" class="form-control"/>
+            </div>
+        </div>
+            <div class="form-group row">
+                <label class="col-sm-4 col-form-label">Email</label>
+                <div class="sol-sm-8">
+                    <input type="text" th:field="*{email}" class="form-control"/>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-4 col-form-label">Choose Image</label>
+                <input type="file"  name="file" accept="image/jpeg, image/png" id="image">
+            </div>
+<!--                <div class="form-group">-->
+<!--                    <img src="#" id="imgPreview" height="100px" width="100px" th:src="@{${'/propertyImages/' + propertyDTO.image}}">-->
+<!--                </div>-->
+
+            <div>
+                <button type="submit" class="btn btn-primary">Add</button>
+            </div>
+        </div>
+
+    </form>
+    </div>
+<script src="js/bootstrap.js"></script>
+
+</body>
+</html>

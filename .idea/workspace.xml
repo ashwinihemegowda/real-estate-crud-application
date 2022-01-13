@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="499f11a9-49d2-4406-b316-d9d521b793c2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/controller/AdminControllerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/controller/AdminControllerInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/controller/UserViewControllerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/controller/UserViewControllerInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/model/Property.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/repository/PropertyRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/service/PropertyServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/service/PropertyServiceInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/service/ViewServiceInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/service/ViewServiceInterfaceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/How to claim private ownership over Kharab Land in Karnataka.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/apartment.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/certificate-in-real-estate-process-for-development-investment-repdi-course.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/for-rent-sign-in-front-of-new-house-149060607-1ddf9bfcf61141d08d0f5003277e902c.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/home_green_apartment-ramamurthy_nagar-bengaluru-home_builders.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/land.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/login.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/logorealestate.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/om_villa-noida_extension-noida-om_shri_m_k_developers.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/realestate.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/villa.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/villa2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/addProperty.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/adminLogin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/apartment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/detailsuser.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/land.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/loginold.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/propertylist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/registrationold.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/rent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/rentex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/villa.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/img/How to claim private ownership over Kharab Land in Karnataka.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/img/certificate-in-real-estate-process-for-development-investment-repdi-course.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/img/for-rent-sign-in-front-of-new-house-149060607-1ddf9bfcf61141d08d0f5003277e902c.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/img/home_green_apartment-ramamurthy_nagar-bengaluru-home_builders.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/img/om_villa-noida_extension-noida-om_shri_m_k_developers.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/addProperty.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/propertylist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/rent.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/javaguides/springboot/Realest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/Realest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/javaguides/springboot/config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/config/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/javaguides/springboot/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/model/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/javaguides/springboot/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/javaguides/springboot/property/Properties.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/javaguides/springboot/property/PropertyController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/javaguides/springboot/property/PropertyRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/javaguides/springboot/property/PropertyService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/javaguides/springboot/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/javaguides/springboot/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/javaguides/springboot/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/javaguides/springboot/web/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/javaguides/springboot/web/UserRegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/controller/UserRegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/javaguides/springboot/web/dto/UserRegistrationDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/web/dto/UserRegistrationDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/appProperty.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/properties.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/registration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/updateProperty.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/updateProperty.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/net/javaguides/springboot/RegistrationLoginSpringBootSecurityThymeleafApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/thbs/realestate/RegistrationLoginSpringBootSecurityThymeleafApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/Realest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/config/SecurityConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/model/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/property/Properties.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/property/PropertyController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/property/PropertyRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/property/PropertyService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/repository/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/service/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/web/MainController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/web/UserRegistrationController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/web/dto/UserRegistrationDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/appProperty.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/properties.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/registration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/updateProperty.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/updateProperty.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/net/javaguides/springboot/RegistrationLoginSpringBootSecurityThymeleafApplicationTests.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="JPA Inspector" value="true" />
+        <entry key="JPA Palette" value="true" />
+        <entry key="JPA Structure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="JPA Inspector" value="false" />
+        <entry key="JPA Palette" value="false" />
+        <entry key="JPA Structure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="23YCJQu2xC8USSQX3bVXnAts437" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../finalProject/spring" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Realest" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.thbs.realestate.Realest" />
+      <module name="realestatepro" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.thbs.realestate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="499f11a9-49d2-4406-b316-d9d521b793c2" name="Changes" comment="" />
+      <created>1641901563803</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1641901563803</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

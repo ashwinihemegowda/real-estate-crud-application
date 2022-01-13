@@ -1,54 +1,93 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org"
-	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-<meta charset="ISO-8859-1">
-<title>Registration and Login App</title>
+    <meta charset="UTF-8">
+    <title>First Page</title>
+    <style>
+        body{
+         margin: 0;
+         padding: 0;
+         font-family: arial;
+        }
 
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-	crossorigin="anonymous">
+        .menu-bar{
+           background: rgba(255, 245, 102, 0.621) ;
+           text-align: center;
+           width:100%;
+           border-radius:10px;
+        }
+        .container{
+         position: absolute;
+         left: 0;
+         top: 0;
+         width: 100%;
+         height: 100vh;
+         animation: animate 30s ease-in-out infinite;
+         background-size: cover;
+        }
+        .container img{
+         position: absolute;
+         top: 8px;
+         right: 16px;
+         width: 10%;
+         height: 20%;
+         border-radius: 100px;
+        }
+        .outer{
+          position:absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100vh;
+          background: rgba(0,0,0,0.5);
+        }
+        .details{
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+        }
+        .details a{
+          display: grid;
+          background: #663399;
+          padding: 10px 24px;
+          text-decoration: none;
+          color: #FFD700;
+          font-family: "Poppins",sans-serif;
+          font-size: 18px;
+          border-radius: 5px;
+        }
+        .details a:hover{
+          background: #9370DB;
 
+        }
+        @keyframes animate{
+         0%,100%{
+           background-image: url(img/apartment.jpeg);
+         }
+         25%{
+           background-image: url(img/realestate.jpeg);
+         }
+         50%{
+           background-image: url(img/villa.jpeg);
+         }
+         75%{
+           background-image: url(img/land.jpeg);
+         }
+        }
+    </style>
 </head>
 <body>
-	<!-- create navigation bar ( header) -->
-	<nav class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed"
-					data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-					aria-controls="navbar">
-					<span class="sr-only">Toggle navigation</span> <span
-						class="icon-bar"></span> <span class="icon-bar"></span> <span
-						class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#" th:href="@{/}">Registration and
-					Login Module</a>
-			</div>
-			<div id="navbar" class="collapse navbar-collapse">
-				<ul class="nav navbar-nav">
-					<li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">Logout</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-
-	<br>
-	<br>
-
-	<div class="container">
-		<h1>Registration and Login with Spring Boot, Spring Security,
-			Thymeleaf, Hibernate and MySQL</h1>
-		Welcome <span sec:authentication="principal.username"> User</span>
-	</div>
-
-	<div class="container-fluid text-center">
-		<h1>Welcome</h1>
-		<a class="h2" th:href="@{/properties}">Manage Users</a>
-	</div>
-
-         <!--deepak code -->
+  <div class="container">
+      <img th:src="@{img\logorealestate.jpeg}">
+      <div class="outer">
+          <div class="details">
+              <a th:href="@{/adminLogin}">ADMIN</a><br>
+              <a th:href="@{/login}">USER</a>
+          </div>
+      </div>
+  </div>
 
 </body>
 </html>
