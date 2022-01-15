@@ -6,21 +6,25 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class MainController {
 
+	//User login
 	@GetMapping("/login")
 	public String login() {
 		return "login";
 	}
 
+	//default page
 	@GetMapping("/")
 	public String index() {
 		return "index";
 	}
 
+	//View propertylist
 	@GetMapping("/home")
 	public String home() {
 		return "home";
 	}
 
+	//Admin login
 	@GetMapping("/adminLogin")
 	public String adminLogin() {
 		return "adminLogin";

@@ -42,4 +42,9 @@ public class ViewServiceInterfaceImpl implements ViewServiceInterface{
         return propertyRepository.findById(propertyId).get();
     }
 
+
+    public List<Property> getPropertyByEmail(String email){
+        return propertyRepository.findByEmail(email);
+    }
+
 }

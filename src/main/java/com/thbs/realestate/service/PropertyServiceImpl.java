@@ -108,5 +108,10 @@ public class PropertyServiceImpl implements PropertyServiceInterface {
 
     }
 
+    public List<Property> useradd(String email)
+    {
+        return propertyRepository.findByEmail(email);
+    }
+
 
 }
