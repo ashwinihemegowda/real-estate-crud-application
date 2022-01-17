@@ -1,87 +1,33 @@
 pipeline {
-agent any
-tools {
-maven 'Maven' 
-}
+    agent any
 
-stages {
-
-  stage('Build Maven') {
-    steps {
-      git branch: 'nigil',url: 'https://github.com/ashwinihemegowda/real-estate-crud-application'
-      sh "mvn -Dmaven.test.failure.ignore=true clean package"
+    tools {
+        // Install the Maven version configured as "M3" and add it to the path.
+        maven "Maven"
     }
-  }
-  stage("Publish to Nexus Repository Manager") {
 
-    steps {
+    stages {
+        stage('Build') {
+            steps {
+                // Get some code from a GitHub repository
+                git 'https://github.com/ashwinihemegowda/real-estate-crud-application.git'
 
-      script {
+                // Run Maven on a Unix agent.
+                sh "mvn -Dmaven.test.failure.ignore=true clean package"
 
-        pom = readMavenPom file: "pom.xml";
+                // To run Maven on a Windows agent, use
+                // bat "mvn -Dmaven.test.failure.ignore=true clean package"
+            }
 
-        filesByGlob = findFiles(glob: "target/*.${pom.packaging}");
-
-        echo "${filesByGlob[0].name} ${filesByGlob[0].path} ${filesByGlob[0].directory} ${filesByGlob[0].length} ${filesByGlob[0].lastModified}"
-
-        artifactPath = filesByGlob[0].path;
-
-        artifactExists = fileExists artifactPath;
-
-        if (artifactExists) {
-
-          echo "*** File: ${artifactPath}, group: ${pom.groupId}, packaging: ${pom.packaging}, version ${pom.version}";
-
-          nexusArtifactUploader(
-            nexusVersion: 'nexus3',
-
-            protocol: 'http',
-
-            nexusUrl: '192.168.1.4:8081',
-
-            groupId: 'pom.com.thbs',
-
-            version: 'pom.0.0.1-SNAPSHOT',
-
-            repository: 'maven-central-repository',
-
-            credentialsId: 'NEXUS_CRED',
-
-            artifacts: [
-
-              [artifactId: 'pom.realest',
-
-                classifier: '',
-
-                file: artifactPath,
-
-                type: pom.packaging
-              ],
-
-              [artifactId: 'pom.realest',
-
-                classifier: '',
-
-                file: "pom.xml",
-
-                type: "pom"
-              ]
-
-            ]
-
-          );
-
-        } else {
-
-          error "*** File: ${artifactPath}, could not be found";
-
+            post {
+                // If Maven was able to run the tests, even if some of the test
+                // failed, record the test results and archive the jar file.
+                success {
+                    junit '**/target/surefire-reports/TEST-*.xml'
+                    archiveArtifacts 'target/*.jar'
+                }
+          
+            }
         }
-
-      }
-
     }
-
-  }
-}
-
 }
