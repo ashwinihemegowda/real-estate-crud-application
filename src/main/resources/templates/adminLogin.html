@@ -59,7 +59,7 @@
     <div class="col-md-4 col-sm-4 col-xs-12"></div>
     <div class="col-md-4 col-sm-4 col-xs-12">
 
-      <form class="form-container"  th:action="@{/propertylist}">
+      <form class="form-container"  th:action="@{/admin}">
 
         <h1>Admin Log In</h1>
         <!-- error message -->
@@ -74,14 +74,17 @@
         </div>
 
         <div class = "form-group">
+          <div th:if="${message}" class="alert alert-success text-center">
+            [[${message}]]
+          </div>
           <label for ="username">Email</label> :
-          <input type="text" class = "form-control h3" id ="username" required
+          <input type="text" class = "form-control h3" id ="username" name="username" required
                  placeholder="Enter Email ID" autofocus="autofocus">
         </div>
 
         <div class="form-group">
           <label for="password">Password</label>: <input type="password"
-                                                         id="password"  required class="form-control"
+                                                         id="password" name="password"  required class="form-control"
                                                          placeholder="Enter Password" />
         </div>
 

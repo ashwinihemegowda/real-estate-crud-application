@@ -103,4 +103,15 @@ public class AdminController {
 
     }
 
+    @GetMapping("/admin")
+    public String admin(@RequestParam("username")String username,@RequestParam("password")String password,RedirectAttributes ra){
+        if(username.equals("admin@gmail.com") && password.equals("admin123"))
+            return "redirect:/propertylist";
+        else {
+            ra.addFlashAttribute("message", "Invalid Email or password");
+            return "redirect:/adminLogin";
+        }
+
+    }
+
 }

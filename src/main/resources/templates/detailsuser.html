@@ -30,6 +30,8 @@
       border: none;
       border-radius: 0;
       margin-bottom:10px;
+      margin-left:450px;
+      margin-top:20px;
     }
     .carousel-inner {
       padding: 1em;
@@ -111,7 +113,7 @@ body {
     <div class="cards-wrapper">
         <div id="column" class="card "  th:each="property:${details}">
             <img class="card-img-top" th:src="*{'data:image/jpeg;base64,'+{property.image}}" alt="Card image cap" width="350" height="250">
-            <div class="card-body">
+            <tr class="card-body">
                 <table class="table-hover w-auto xlarge">
                     <tbody>
                     <tr>
@@ -160,11 +162,17 @@ body {
                         <th>Email</th>
                         <td>[[${property.email}]]</td>
                     </tr>
+                    <tr>
+                        <td>
+                            <a class="h2 mr-3 btn btn-info btn-lg" on th:href="@{'/home'}" >Go Back</a>
+                        </td>
+
+                    </tr>
                     </tbody>
                 </table>
-            </div>
         </div>
     </div>
+</div>
 </div>
 </body>
 </html>

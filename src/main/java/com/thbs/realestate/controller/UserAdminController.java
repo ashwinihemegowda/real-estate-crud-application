@@ -27,8 +27,11 @@ public class UserAdminController {
     //Add property
 
     @GetMapping("/addProperty1")
-    public String addProperty(Model model){
-        model.addAttribute("property", new Property());
+    public String addProperty(Model model ,@AuthenticationPrincipal User user){
+        String email=user.getUsername();
+        Property property= new Property();
+        property.setEmail(email);
+        model.addAttribute("property", property);
         model.addAttribute("pageTitle", "Add New Property");
         return "addProperty1";
     }
