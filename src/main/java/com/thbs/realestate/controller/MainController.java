@@ -29,4 +29,18 @@ public class MainController {
 	public String adminLogin() {
 		return "adminLogin";
 	}
+
+	//About Us
+	@GetMapping("/about")
+	public String aboutUs() {
+		return "about";
+	}
+
+	//Contact Us
+	@GetMapping("/contactUs")
+	public String contactUs() {
+		return "contacts";
+	}
+
+
 }

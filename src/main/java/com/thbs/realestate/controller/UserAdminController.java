@@ -50,7 +50,7 @@ public class UserAdminController {
 
     ){
         propertyService.savePropertyToDB(file,propertyName,category,description,price,address,facilities,ownerName,contactNo,email);
-        ra.addFlashAttribute("message","The user has been saved successfully");
+        ra.addFlashAttribute("message","The property has been added successfully");
         return "redirect:/propertylist1";
     }
 
@@ -71,7 +71,7 @@ public class UserAdminController {
                                       RedirectAttributes ra
     ){
         propertyService.updatePropertyToDB(file,propertyId,propertyName,category,description,price,address,facilities,ownerName,contactNo,email);
-        ra.addFlashAttribute("message","The user has been updated successfully");
+        ra.addFlashAttribute("message","The property has been updated successfully");
         return "redirect:/propertylist1";
     }
 

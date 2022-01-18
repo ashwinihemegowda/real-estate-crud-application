@@ -18,17 +18,14 @@ public class Property {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int propertyId;
 
-    @Column(nullable = false, length = 100, name = "category")
     private String category;
 
-    @Column(nullable = false, length = 100, name = "propertyName")
     private String propertyName;
 
-    @Column(nullable = false, length = 150, name = "city")
     private String description;
 
-    @Column(nullable = false, length = 50, name = "price")
     private String price;
+
     @Lob
     @Column(columnDefinition = "LONGBLOB")
 

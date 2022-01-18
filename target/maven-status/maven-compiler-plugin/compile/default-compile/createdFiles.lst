@@ -1,4 +1,3 @@
-com\thbs\realestate\controller\AdminControllerImpl.class
 com\thbs\realestate\model\Role.class
 com\thbs\realestate\service\ViewServiceInterface.class
 com\thbs\realestate\model\Property.class
@@ -6,15 +5,15 @@ com\thbs\realestate\controller\MainController.class
 com\thbs\realestate\controller\UserRegistrationController.class
 com\thbs\realestate\Realest.class
 com\thbs\realestate\service\UserServiceImpl.class
+com\thbs\realestate\controller\AdminController.class
 com\thbs\realestate\service\PropertyServiceInterface.class
-com\thbs\realestate\controller\UserViewControllerImpl.class
 com\thbs\realestate\service\UserService.class
 com\thbs\realestate\web\dto\UserRegistrationDto.class
-com\thbs\realestate\controller\AdminControllerInterface.class
-com\thbs\realestate\controller\UserViewControllerInterface.class
+com\thbs\realestate\controller\UserViewController.class
 com\thbs\realestate\repository\PropertyRepository.class
 com\thbs\realestate\model\User.class
 com\thbs\realestate\service\ViewServiceInterfaceImpl.class
 com\thbs\realestate\repository\UserRepository.class
 com\thbs\realestate\config\SecurityConfiguration.class
+com\thbs\realestate\controller\UserAdminController.class
 com\thbs\realestate\service\PropertyServiceImpl.class
