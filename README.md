@@ -3,3 +3,4 @@ commit2
 new commit2
 hi1
 hlo
+hi
