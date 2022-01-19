@@ -6,38 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="499f11a9-49d2-4406-b316-d9d521b793c2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/controller/UserAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/controller/UserAdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/addProperty.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/addProperty.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/addproperty1.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/addproperty1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/adminLogin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/adminLogin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/apartment.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/apartment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/details.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/detailsuser.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/detailsuser.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/land.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/land.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/propertylist.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/propertylist.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/propertylist1.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/propertylist1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/rentex.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/rentex.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/updateProperty.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/updateProperty.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/updateproperty1.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/updateproperty1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/villa.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/villa.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/details1.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/details1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thbs/realestate/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thbs/realestate/controller/AdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thbs/realestate/controller/UserAdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thbs/realestate/controller/UserAdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/addproperty1.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/addproperty1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/adminLogin.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/adminLogin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/apartment.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/apartment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/details.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/detailsuser.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/detailsuser.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/land.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/land.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/rentex.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/rentex.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/updateproperty1.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/updateproperty1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/villa.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/villa.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/realestatepro-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/realestatepro-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/realestatepro-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/realestatepro-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

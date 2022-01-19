@@ -22,7 +22,7 @@
 
 </head>
 
-<body>
+<body style="background-color:#D0D3D4  ">
 <div class="container-fluid">
     <div class="text-center bg-dark text-white mb-2"><h2>[[${pageTitle}]]</h2></div>
     <form th:action="@{/propertylist1}" method="post" th:object="${details}">
@@ -37,40 +37,40 @@
 
                 <td class="border-0">
                     <table class="table table-bordered">
-                        <tr class="border-0"><th colspan="2" class="border-0"><h4>Property Details</h4></th></tr>
+                        <tr class="border-0"><th colspan="2" class="border-0"><h4><i><u>Property Details</u></i></h4></th></tr>
                         <tr class="border-0">
                             <td class="border-0">
                                 <div class="form-group row">
-                                    <label class="col-sm-4 col-form-label">Property Id</label>
+                                    <label class="col-sm-4 col-form-label"><b>Property Id  :</b></label>
                                     <div><input type="text" th:field="*{propertyId}" class="form-control border-0"/></div>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-sm-4 col-form-label">Category</label>
+                                    <label class="col-sm-4 col-form-label"><b>Category  :</b></label>
                                     <div><input type="text" th:field="*{category}" class="form-control border-0"/></div>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-sm-4 col-form-label">Property Name</label>
+                                    <label class="col-sm-4 col-form-label"><b>Property Name:</b></label>
                                     <div><input type="text" th:field="*{propertyName}" class="form-control border-0"/></div>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-sm-4 col-form-label">Description</label>
+                                    <label class="col-sm-4 col-form-label"><b>Description  :</b></label>
                                     <div><input type="text" th:field="*{description}" class="form-control border-0"/></div>
                                 </div>
 
                                 <div class="form-group row">
-                                    <label class="col-sm-4 col-form-label">Price</label>
+                                    <label class="col-sm-4 col-form-label"><b>Price  :</b></label>
                                     <div><input type="text" th:field="*{price}" class="form-control border-0"/></div>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-sm-4 col-form-label">Address</label>
+                                    <label class="col-sm-4 col-form-label"><b>Address   :</b></label>
                                     <div>
                                         <!--                    <textarea th:field="*{address}" class="form-control border-0"></textarea>-->
-                                        <textarea rows="4" cols="25" th:field="*{address}" class="form-control border-0"/></div>
+                                        <textarea rows="4" cols="23" th:field="*{address}" class="form-control border-0"/></div>
                                 </div>
 
                                 <div class="form-group row">
-                                    <label class="col-sm-4 col-form-label">Facilities</label>
-                                    <div><textarea th:field="*{facilities}"  class="form-control border-0"/></div>
+                                    <label class="col-sm-4 col-form-label"><b>Facilities   :</b></label>
+                                    <div><textarea rows="2" cols="23" th:field="*{facilities}"  class="form-control border-0"/></div>
                                 </div>
                             </td>
                         </tr>
@@ -79,23 +79,23 @@
             </tr>
         </table>
 
-        <table class="table">
-            <tr><td class="border-0"></td><th colspan="2" class="border-0"><h4>Owner Details</h4></th></tr>
+        <table class="table table-bordered">
+            <tr><td class="border-0"></td><th colspan="2" class="border-0"><h4><i><u>Owner Details</u></i></h4></th></tr>
             <tr>
                 <td class="border-0"></td>
                 <td class="border-0">
                     <div class="form-group row ml-4">
-                        <label class="col-sm-2 col-form-label">Owner Name</label>
+                        <label class="col-sm-2 col-form-label"><b>Owner Name :</b></label>
                         <div><input type="text" th:field="*{ownerName}" class="form-control border-0"/></div>
                     </div>
 
                     <div class="form-group row ml-4">
-                        <label class="col-sm-2 col-form-label">Contact No</label>
+                        <label class="col-sm-2 col-form-label"><b>Contact No  :</b></label>
                         <div><input type="text" th:field="*{contactNo}" class="form-control border-0"/></div>
                     </div>
 
                     <div class="form-group row ml-4">
-                        <label class="col-sm-2 col-form-label">Email</label>
+                        <label class="col-sm-2 col-form-label"><b>Email       :</b></label>
                         <div><input type="text" th:field="*{email}" class="form-control border-0"/></div>
                     </div>
                 </td>
