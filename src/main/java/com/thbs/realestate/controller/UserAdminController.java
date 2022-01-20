@@ -33,7 +33,7 @@ public class UserAdminController {
         property.setEmail(email);
         model.addAttribute("property", property);
         model.addAttribute("pageTitle", "Add New Property");
-        return "addProperty1";
+        return "addproperty1";
     }
 
     //save new property
@@ -85,7 +85,7 @@ public class UserAdminController {
         Property prop=propertyService.get(id);
         model.addAttribute("property", prop);
         model.addAttribute("pageTitle", "Edit Property (ID: "+id+")");
-        return "updateProperty1";
+        return "updateproperty1";
     }
 
     //user add property----->

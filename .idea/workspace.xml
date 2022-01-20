@@ -7,6 +7,10 @@
     <list default="true" id="499f11a9-49d2-4406-b316-d9d521b793c2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/controller/UserAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/controller/UserAdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/thbs/realestate/controller/UserAdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thbs/realestate/controller/UserAdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/realestatepro-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/realestatepro-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/realestatepro-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/realestatepro-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/thbs/realestate/RegistrationLoginSpringBootSecurityThymeleafApplicationTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +65,7 @@
       <recent name="C:\Users\ashwini_hemegowda\Downloads\realest2\realestatepro\src\main\resources\templates" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.RegistrationLoginSpringBootSecurityThymeleafApplicationTests.contextLoads">
     <configuration name="Realest" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -77,6 +81,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RegistrationLoginSpringBootSecurityThymeleafApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="realestatepro" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.thbs.realestate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.thbs.realestate" />
+      <option name="MAIN_CLASS_NAME" value="com.thbs.realestate.RegistrationLoginSpringBootSecurityThymeleafApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.RegistrationLoginSpringBootSecurityThymeleafApplicationTests.contextLoads" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -100,5 +125,19 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/thbs/realestate/RegistrationLoginSpringBootSecurityThymeleafApplicationTests.java</url>
+          <line>9</line>
+          <properties class="com.thbs.realestate.RegistrationLoginSpringBootSecurityThymeleafApplicationTests" method="contextLoads">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
