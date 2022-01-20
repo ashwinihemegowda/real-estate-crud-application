@@ -37,7 +37,7 @@ stages {
 
             protocol: 'http',
 
-            nexusUrl: '3.110.37.174:8081',
+            nexusUrl: '13.235.48.33:8081',
 
             groupId: 'pom.com.thbs.realestate',
 
