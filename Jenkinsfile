@@ -37,7 +37,7 @@ stages {
 
             protocol: 'http',
 
-            nexusUrl: '192.168.0.180:8081',
+            nexusUrl: '13.235.48.33:8081',
 
             groupId: 'pom.com.thbs.realestate',
 
@@ -45,7 +45,7 @@ stages {
 
             repository: 'maven-central-repository',
 
-            credentialsId: 'NEXUS_CRED',
+            credentialsId: 'NEXUS_CREDENTIAL',
 
             artifacts: [
 
