@@ -26,6 +26,13 @@ pipeline {
                     groupId: 'com.thbs.realestate',
                     nexusUrl: '192.168.0.180:8081',
                     nexusVersion: 'nexus3', protocol: 'http',
+                    [artifactId: 'realestatepro', classifier: '', 
+                    file: 'target/realestatepro-0.0.1-SNAPSHOT.jar', 
+                    type: 'jar']], 
+                    credentialsId: 'NEXUS_CRED',
+                    groupId: 'com.thbs.realestate', 
+                    nexusUrl: '192.168.0.180:8081', 
+                    nexusVersion: 'nexus3', protocol: 'http',
                     repository: 'maven-central-repository', version: '0.0.1-SNAPSHOT'
             }
         }
