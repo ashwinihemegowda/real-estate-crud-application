@@ -118,8 +118,17 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<version>${pom.parent.version}</version>
 			</plugin>
 		</plugins>
 	</build>
+	<distributionManagement>
+		<repository>
+			<id>Deployment</id>
+			<name>Internal Releases</name>
+			<url>http://192.168.0.180:8081/repository/maven-central-repository</url>
+		</repository>
+
+	</distributionManagement>
 
 </project>
