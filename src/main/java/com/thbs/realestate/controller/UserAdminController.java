@@ -81,10 +81,10 @@ public class UserAdminController {
     //update property by propertyId
 
     @GetMapping("/propertylist1/edit/{id}")
-    public String editProperty(@PathVariable("id") Integer id, Model model){
-        Property prop=propertyService.get(id);
-        model.addAttribute("property", prop);
-        model.addAttribute("pageTitle", "Edit Property (ID: "+id+")");
+    public String editProperty(@PathVariable("id") Integer propertyId, Model model){
+        Property property=propertyService.getDetailsById(propertyId);
+        model.addAttribute("property", property);
+        model.addAttribute("pageTitle", "Edit Property (ID: "+propertyId+")");
         return "updateproperty1";
     }
 

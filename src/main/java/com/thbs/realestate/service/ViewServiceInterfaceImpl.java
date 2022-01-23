@@ -36,15 +36,10 @@ public class ViewServiceInterfaceImpl implements ViewServiceInterface{
         return propertyRepository.findByCategory("apartment");
     }
 
-    //details of property by id
+    //details of property by propertyId
     @Override
     public Property getDetailsById1(Integer propertyId) {
         return propertyRepository.findById(propertyId).get();
-    }
-
-
-    public List<Property> getPropertyByEmail(String email){
-        return propertyRepository.findByEmail(email);
     }
 
 }

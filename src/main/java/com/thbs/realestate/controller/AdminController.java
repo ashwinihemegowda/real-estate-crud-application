@@ -10,8 +10,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
-
-import java.security.Principal;
 import java.util.List;
 
 @Controller
@@ -20,7 +18,7 @@ public class AdminController {
     @Autowired
     private PropertyServiceImpl propertyService;
 
-    //Get all property
+    //Get all property from database and return to propertylist page
     @GetMapping("/propertylist")
     public String showPropertyList(Model model){
         List<Property> listProperty=propertyService.listAll();
@@ -29,7 +27,7 @@ public class AdminController {
     }
 
 
-    //Add property
+    //Add property details into new property object
     @GetMapping("/addProperty")
     public String addProperty(Model model){
         model.addAttribute("property", new Property());
@@ -37,7 +35,7 @@ public class AdminController {
         return "addProperty";
     }
 
-    //save new property
+    //save new property into database and redirect to propertylist page
     @PostMapping("/saveNewProperty")
     public String saveNewProperty(@RequestParam("file")MultipartFile file,
                                   @RequestParam("propertyName")String propertyName,
@@ -57,7 +55,17 @@ public class AdminController {
         return "redirect:/propertylist";
     }
 
-    //save updated property
+    //update property by propertyId
+    @GetMapping("/propertylist/edit/{id}")
+    public String editProperty(@PathVariable("id") Integer propertyId, Model model){
+        Property prop=propertyService.getDetailsById(propertyId);
+        model.addAttribute("property", prop);
+        model.addAttribute("pageTitle", "Edit Property (ID: "+propertyId+")");
+        return "updateProperty";
+    }
+
+
+    //save updated property into database and redirect to propertylist page
     @PostMapping("/saveUpdatedProperty")
     public String saveUpdatedProperty(@RequestParam("file")MultipartFile file,
                                       @RequestParam("propertyId")int propertyId,
@@ -75,15 +83,6 @@ public class AdminController {
         propertyService.updatePropertyToDB(file,propertyId,propertyName,category,description,price,address,facilities,ownerName,contactNo,email);
         ra.addFlashAttribute("message","The property has been updated successfully");
         return "redirect:/propertylist";
-    }
-
-    //update property by propertyId
-    @GetMapping("/propertylist/edit/{id}")
-    public String editProperty(@PathVariable("id") Integer id, Model model){
-        Property prop=propertyService.get(id);
-        model.addAttribute("property", prop);
-        model.addAttribute("pageTitle", "Edit Property (ID: "+id+")");
-        return "updateProperty";
     }
 
     //delete property by id

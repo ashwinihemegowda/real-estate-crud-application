@@ -6,5 +6,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface UserRepository extends JpaRepository<User,Long>{
+
+	//Abstract method to get user filtered by email
 	User findByEmail(String email);
 }

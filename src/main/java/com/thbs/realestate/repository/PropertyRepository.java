@@ -8,7 +8,11 @@ import java.util.List;
 
 @Repository
 public interface PropertyRepository extends JpaRepository<Property, Integer> {
+
+    //Abstract method to get list of property filtered by specified category
     public List<Property> findByCategory(String category);
+
+    //Abstract method to get list of property filtered by specified email
     public List<Property> findByEmail(String email);
 
 }

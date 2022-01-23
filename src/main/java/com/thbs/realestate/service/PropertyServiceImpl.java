@@ -19,33 +19,20 @@ public class PropertyServiceImpl implements PropertyServiceInterface {
     private PropertyRepository propertyRepository;
     
 
+    //Method to get property details from database
     @Override
     public List<Property> listAll(){
         return (List<Property>) propertyRepository.findAll();
     }
 
 
-    //
-    @Override
-    public Property get(Integer propertyId){
-        Optional<Property> result=propertyRepository.findById(propertyId);
-        Property property =null;
-        if(result.isPresent()){
-            property =result.get();
-        }
-        else{
-            throw new RuntimeException("Properties not found for id " + propertyId);
-        }
-        return property;
-    }
-
-    //method to delete property by id
+    //Method to delete property by id
     @Override
     public void delete(Integer id)  {
         propertyRepository.deleteById(id);
     }
 
-    //method to get details by id
+    //Method to get property details by id
     @Override
     public Property getDetailsById(Integer id) {
         return propertyRepository.findById(id).get();
@@ -108,6 +95,7 @@ public class PropertyServiceImpl implements PropertyServiceInterface {
 
     }
 
+    //Method to get property details filtered by Email
     public List<Property> useradd(String email)
     {
         return propertyRepository.findByEmail(email);

@@ -10,9 +10,6 @@ public interface PropertyServiceInterface {
     //Abstract Method to list all property
     public List<Property> listAll();
 
-    //Abstract Method to get property by propertyId
-    public Property get(Integer id);
-
     //Abstract Method to delete property by propertyId
     public void delete(Integer id);
 
