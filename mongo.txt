@@ -1,0 +1,346 @@
+>use project
+switched to db project
+> db
+project
+> db.createCollection('property')
+{ "ok" : 1 }
+> show collections
+property
+> db.property.insert({
+...     'property_id': 1,
+...     'address': 'Bangalore',
+...     'category': 'Apartment',
+...     'contact_no': 9876543210,
+...     'description': '# BHK',
+...     'email': 'shahbaz@gmail.com',
+...     'facilities': 'Parking',
+...     'owner_name': 'Shahbaz',
+...     'price': '3 cr',
+...     'property_name': 'Prestige'
+...  })
+WriteResult({ "nInserted" : 1 })
+>
+> db.property.insert({
+...     'property_id': 2,
+...     'address': 'Bangalore',
+...     'category': 'land',
+...     'contact_no': 9876543211,
+...     'description': '24000sqft',
+...     'email': 'ashwini@gmail.com',
+...     'facilities': 'Boundry',
+...     'owner_name': 'Ashwini',
+...     'price': '50000 per sqft',
+...     'property_name': 'Land'
+...  })
+WriteResult({ "nInserted" : 1 })
+>
+> db.property.insert({
+...     'property_id': 3,
+...     'address': 'Bangalore',
+...     'category': 'villa',
+...     'contact_no': 9876543212,
+...     'description': '4 BHK',
+...     'email': 'nigil@gmail.com',
+...     'facilities': 'Swimming Pool',
+...     'owner_name': 'Shahbaz',
+...     'price': '4 cr',
+...     'property_name': 'Land'
+...  })
+WriteResult({ "nInserted" : 1 })
+>
+> db.property.insert({
+...     'property_id': 4,
+...     'address': 'Bangalore',
+...     'category': 'Flat',
+...     'contact_no': 9876543213,
+...     'description': '24000sqft',
+...     'email': 'deepak@gmail.com',
+...     'facilities': 'Parking',
+...     'owner_name': 'Deepak',
+...     'price': '12000 per month',
+...     'property_name': 'DH'
+...  })
+WriteResult({ "nInserted" : 1 })
+> db.property.find().pretty()
+{
+        "_id" : ObjectId("61e7b9dc20f186a5286db2a4"),
+        "property_id" : 1,
+        "address" : "Bangalore",
+        "category" : "Apartment",
+        "contact_no" : 9876543210,
+        "description" : "# BHK",
+        "email" : "shahbaz@gmail.com",
+        "facilities" : "Parking",
+        "owner_name" : "Shahbaz",
+        "price" : "3 cr",
+        "property_name" : "Prestige"
+}
+{
+        "_id" : ObjectId("61e7b9dc20f186a5286db2a5"),
+        "property_id" : 2,
+        "address" : "Bangalore",
+        "category" : "land",
+        "contact_no" : 9876543211,
+        "description" : "24000sqft",
+        "email" : "ashwini@gmail.com",
+        "facilities" : "Boundry",
+        "owner_name" : "Ashwini",
+        "price" : "50000 per sqft",
+        "property_name" : "Land"
+}
+{
+        "_id" : ObjectId("61e7b9dc20f186a5286db2a6"),
+        "property_id" : 3,
+        "address" : "Bangalore",
+        "category" : "villa",
+        "contact_no" : 9876543212,
+        "description" : "4 BHK",
+        "email" : "nigil@gmail.com",
+        "facilities" : "Swimming Pool",
+        "owner_name" : "Shahbaz",
+        "price" : "4 cr",
+        "property_name" : "Land"
+}
+{
+        "_id" : ObjectId("61e7b9dd20f186a5286db2a7"),
+        "property_id" : 4,
+        "address" : "Bangalore",
+        "category" : "Flat",
+        "contact_no" : 9876543213,
+        "description" : "24000sqft",
+        "email" : "deepak@gmail.com",
+        "facilities" : "Parking",
+        "owner_name" : "Deepak",
+        "price" : "12000 per month",
+        "property_name" : "DH"
+}
+> db.createCollection('user')
+{ "ok" : 1 }
+> show collections
+property
+user
+> db.user.insert({
+...     'id': 1,
+...     'u_name': 'shahbaz',
+...     'email': 'shahbaz@gmail.com',
+...     'password': 'shahbaz'
+... })
+WriteResult({ "nInserted" : 1 })
+>
+> db.user.insert({
+...     'id': 2,
+...     'u_name': 'ashwini',
+...     'email': 'ashwini@gmail.com',
+...     'password': 'ashwini'
+... })
+WriteResult({ "nInserted" : 1 })
+>
+> db.user.insert({
+...     'id': 3,
+...     'u_name': 'deepak',
+...     'email': 'deepak@gmail.com',
+...     'password': 'deepak'
+... })
+WriteResult({ "nInserted" : 1 })
+>
+> db.user.insert({
+...     'id': 4,
+...     'u_name': 'nigil',
+...     'email': 'nigil@gmail.com',
+...     'password': 'nigil'
+... })
+WriteResult({ "nInserted" : 1 })
+>
+> db.user.insert({
+...     'id': 5,
+...     'u_name': 'sai',
+...     'email': 'sai@gmail.com',
+...     'password': 'sai'
+... })
+WriteResult({ "nInserted" : 1 })
+> db.user.find().pretty()
+{
+        "_id" : ObjectId("61e7ba6b20f186a5286db2a8"),
+        "id" : 1,
+        "u_name" : "shahbaz",
+        "email" : "shahbaz@gmail.com",
+        "password" : "shahbaz"
+}
+{
+        "_id" : ObjectId("61e7ba6b20f186a5286db2a9"),
+        "id" : 2,
+        "u_name" : "ashwini",
+        "email" : "ashwini@gmail.com",
+        "password" : "ashwini"
+}
+{
+        "_id" : ObjectId("61e7ba6b20f186a5286db2aa"),
+        "id" : 3,
+        "u_name" : "deepak",
+        "email" : "deepak@gmail.com",
+        "password" : "deepak"
+}
+{
+        "_id" : ObjectId("61e7ba6b20f186a5286db2ab"),
+        "id" : 4,
+        "u_name" : "nigil",
+        "email" : "nigil@gmail.com",
+        "password" : "nigil"
+}
+{
+        "_id" : ObjectId("61e7ba6d20f186a5286db2ac"),
+        "id" : 5,
+        "u_name" : "sai",
+        "email" : "sai@gmail.com",
+        "password" : "sai"
+}
+> db.createCollection('users_roles')
+{ "ok" : 1 }
+> show collections
+property
+user
+users_roles
+> db.users_roles.insert({
+...     'user_id': 1,
+...     'role_id': 1
+... })
+WriteResult({ "nInserted" : 1 })
+>
+> db.users_roles.insert({
+...     'user_id': 2,
+...     'role_id': 2
+... })
+WriteResult({ "nInserted" : 1 })
+>
+> db.users_roles.insert({
+...     'user_id': 3,
+...     'role_id': 3
+... })
+WriteResult({ "nInserted" : 1 })
+>
+> db.users_roles.insert({
+...     'user_id': 4,
+...     'role_id': 4
+... })
+WriteResult({ "nInserted" : 1 })
+>
+> db.users_roles.insert({
+...     'user_id': 5,
+...     'role_id': 5
+... })
+WriteResult({ "nInserted" : 1 })
+> db.user_roles.find().pretty()
+> db.users_roles.find().pretty()
+{
+        "_id" : ObjectId("61e7bac420f186a5286db2ad"),
+        "user_id" : 1,
+        "role_id" : 1
+}
+{
+        "_id" : ObjectId("61e7bac420f186a5286db2ae"),
+        "user_id" : 2,
+        "role_id" : 2
+}
+{
+        "_id" : ObjectId("61e7bac420f186a5286db2af"),
+        "user_id" : 3,
+        "role_id" : 3
+}
+{
+        "_id" : ObjectId("61e7bac420f186a5286db2b0"),
+        "user_id" : 4,
+        "role_id" : 4
+}
+{
+        "_id" : ObjectId("61e7bac520f186a5286db2b1"),
+        "user_id" : 5,
+        "role_id" : 5
+}
+> db.createCollection('role')
+{ "ok" : 1 }
+> show collections
+property
+role
+user
+users_roles
+> db.role.insert({
+...     'id': 1,
+...     'name': 'ROLE_USER'
+... })
+WriteResult({ "nInserted" : 1 })
+>
+> db.role.insert({
+...     'id': 2,
+...     'name': 'ROLE_USER'
+... })
+WriteResult({ "nInserted" : 1 })
+>
+> db.role.insert({
+...     'id': 3,
+...     'name': 'ROLE_USER'
+... })
+WriteResult({ "nInserted" : 1 })
+>
+> db.role.insert({
+...     'id': 4,
+...     'name': 'ROLE_USER'
+... })
+WriteResult({ "nInserted" : 1 })
+>
+> db.role.insert({
+...     'id': 5,
+...     'name': 'ROLE_USER'
+... })
+WriteResult({ "nInserted" : 1 })
+> db.role.find().pretty()
+{
+        "_id" : ObjectId("61e7bb1e20f186a5286db2b2"),
+        "id" : 1,
+        "name" : "ROLE_USER"
+}
+{
+        "_id" : ObjectId("61e7bb1e20f186a5286db2b3"),
+        "id" : 2,
+        "name" : "ROLE_USER"
+}
+{
+        "_id" : ObjectId("61e7bb1e20f186a5286db2b4"),
+        "id" : 3,
+        "name" : "ROLE_USER"
+}
+{
+        "_id" : ObjectId("61e7bb1e20f186a5286db2b5"),
+        "id" : 4,
+        "name" : "ROLE_USER"
+}
+{
+        "_id" : ObjectId("61e7bb2020f186a5286db2b6"),
+        "id" : 5,
+        "name" : "ROLE_USER"
+}
+> db.role.find().pretty()
+{
+        "_id" : ObjectId("61e7bb1e20f186a5286db2b2"),
+        "id" : 1,
+        "name" : "ROLE_USER"
+}
+{
+        "_id" : ObjectId("61e7bb1e20f186a5286db2b3"),
+        "id" : 2,
+        "name" : "ROLE_USER"
+}
+{
+        "_id" : ObjectId("61e7bb1e20f186a5286db2b4"),
+        "id" : 3,
+        "name" : "ROLE_USER"
+}
+{
+        "_id" : ObjectId("61e7bb1e20f186a5286db2b5"),
+        "id" : 4,
+        "name" : "ROLE_USER"
+}
+{
+        "_id" : ObjectId("61e7bb2020f186a5286db2b6"),
+        "id" : 5,
+        "name" : "ROLE_USER"
+}
