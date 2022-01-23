@@ -26,7 +26,7 @@ pipeline {
                     groupId: 'com.thbs.realestate', 
                     nexusUrl: '192.168.0.180:8081', 
                     nexusVersion: 'nexus3', protocol: 'http', 
-                    repository: 'maven-central-repository', version: '0.0.1-SNAPSHOT'
+                    repository: 'Team-5-artifact-repository', version: '0.0.1-SNAPSHOT'
             }
         }
     }
