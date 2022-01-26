@@ -19,21 +19,14 @@ pipeline {
         stage('publish to nexus'){
             steps{
                 nexusArtifactUploader artifacts: [
-                    [artifactId: 'realestatepro', classifier: '',
-                    file: 'target/realestatepro-0.0.1-SNAPSHOT.jar',
-                    type: 'jar']],
-                    credentialsId: 'NEXUS_CREDENTIAL',
-                    groupId: 'com.thbs.realestate',
-                    nexusUrl: '192.168.1.4:8081',
-                    nexusVersion: 'nexus3', protocol: 'http',
                     [artifactId: 'realestatepro', classifier: '', 
                     file: 'target/realestatepro-0.0.1-SNAPSHOT.jar', 
                     type: 'jar']], 
-                    credentialsId: 'NEXUS_CREDENTIAL',
+                    credentialsId: 'NEXUS_CRED',
                     groupId: 'com.thbs.realestate', 
-                    nexusUrl: '192.168.1.4:8081', 
-                    nexusVersion: 'nexus3', protocol: 'http',
-                    repository: 'team5-realEstate-repository', version: '0.0.1-SNAPSHOT'
+                    nexusUrl: '192.168.0.180:8081', 
+                    nexusVersion: 'nexus3', protocol: 'http', 
+                    repository: 'Team-5-artifact-repository', version: '0.0.1-SNAPSHOT'
             }
         }
     }
