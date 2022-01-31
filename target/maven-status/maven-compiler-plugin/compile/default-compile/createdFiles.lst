@@ -4,12 +4,14 @@ com\thbs\realestate\model\Property.class
 com\thbs\realestate\controller\MainController.class
 com\thbs\realestate\controller\UserRegistrationController.class
 com\thbs\realestate\Realest.class
+com\thbs\realestate\SwaggerConfig.class
 com\thbs\realestate\service\UserServiceImpl.class
 com\thbs\realestate\controller\AdminController.class
 com\thbs\realestate\service\PropertyServiceInterface.class
 com\thbs\realestate\service\UserService.class
 com\thbs\realestate\web\dto\UserRegistrationDto.class
 com\thbs\realestate\controller\UserViewController.class
+com\thbs\realestate\model\MyUserDetails.class
 com\thbs\realestate\repository\PropertyRepository.class
 com\thbs\realestate\model\User.class
 com\thbs\realestate\service\ViewServiceInterfaceImpl.class

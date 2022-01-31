@@ -48,12 +48,36 @@ public class UserViewController{
         return "apartment";
     }
 
-    //view details of property by propertyId
-    @GetMapping("/viewdetails/{propertyId}")
-    public String getPropertyDetailsById(@PathVariable("propertyId")Integer id, Model model) {
+    //view details of Rent by propertyId
+    @GetMapping("/viewDetailsRent/{propertyId}")
+    public String getRentDetailsById(@PathVariable("propertyId")Integer id, Model model) {
         Property property=service.getDetailsById1(id);
         model.addAttribute("details",property);
-        return "detailsuser";
+        return "detailsuserrent";
+    }
+
+    //view details of Apartment by propertyId
+    @GetMapping("/viewDetailsApartment/{propertyId}")
+    public String getApartmentDetailsById(@PathVariable("propertyId")Integer id, Model model) {
+        Property property=service.getDetailsById1(id);
+        model.addAttribute("details",property);
+        return "detailsuserapartment";
+    }
+
+    //view details of Villa by propertyId
+    @GetMapping("/viewDetailsVilla/{propertyId}")
+    public String getVillaDetailsById(@PathVariable("propertyId")Integer id, Model model) {
+        Property property=service.getDetailsById1(id);
+        model.addAttribute("details",property);
+        return "detailsuservilla";
+    }
+
+    //view details of land by propertyId
+    @GetMapping("/viewDetailsLand/{propertyId}")
+    public String getLandDetailsById(@PathVariable("propertyId")Integer id, Model model) {
+        Property property=service.getDetailsById1(id);
+        model.addAttribute("details",property);
+        return "detailsuserland";
     }
 
 }

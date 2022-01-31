@@ -20,9 +20,6 @@ import java.util.List;
 public class UserAdminController {
     @Autowired
     private PropertyServiceImpl propertyService;
-    //Get all property
-
-
 
     //Add property
 
