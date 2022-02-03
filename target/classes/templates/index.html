@@ -47,6 +47,7 @@
           top: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
+          color: #FFD700;
         }
         .details a{
           display: grid;
@@ -110,22 +111,24 @@
     </style>
 </head>
 <body>
-  <div class="container">
-      <img th:src="@{img\logorealestate.jpeg}">
+<div class="container">
+    <img th:src="@{img\logorealestate.jpeg}">
 
-      <div class="outer">
-          <div class="details1" align="left">
-              <a  th:href="@{'/adminLogin'}">Admin</a>
-          </div>
-<!--          <div class="details2">-->
-             <center><h1>Welcome to SANDS Real Estate</h1></center> <br>
-<!--          </div>-->
-          <div class="details">
-              <a th:href="@{/home}">VIEW PROPERTY</a><br>
-              <a th:href="@{/login}">ADD PROPERTY</a>
-          </div>
-      </div>
-  </div>
+    <div class="outer">
+        <div class="details1" align="left">
+            <a  th:href="@{'/adminLogin'}">Admin</a>
+        </div>
+        <!--          <div class="details2">-->
+        <center><h1>Welcome to SANDS Real Estate</h1></center> <br>
+        <!--          </div>-->
+        <div class="details">
+            <a th:href="@{/home}">VIEW PROPERTY</a><br>
+            <a th:href="@{/login}">ADD PROPERTY</a><br>
+            <p><b>Have any query</b></p>
+            <a th:href="@{/chat}">Chat</a>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>

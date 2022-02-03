@@ -24,4 +24,9 @@ public interface PropertyServiceInterface {
     //Abstract Method to save new property in database
     public void savePropertyToDB(MultipartFile file,String propertyName,String category, String description, String price,String address, String facilities,
                                  String ownerName, long contactNo, String email);
+
+    public List<Property> getByCategory(String category);
+
+    public List<Property> getByPropertyName(String propertyName);
+    public List<Property> getByPrice(String price);
 }

@@ -5,36 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70cfd27a-aac3-4a2e-bc7c-3b3aed9c2279" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/controller/AdminController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/controller/UserAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/controller/UserAdminController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/controller/UserRegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/controller/UserRegistrationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/controller/UserViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/controller/UserViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/model/Property.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/model/Property.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/repository/PropertyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/repository/PropertyRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/service/PropertyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/service/PropertyServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/service/PropertyServiceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/service/PropertyServiceInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/apartment.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/apartment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/detailsuser.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/detailsuserrent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/land.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/land.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/registration.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/rentex.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/rentex.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/villa.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/villa.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/details.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/detailsuserland.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/detailsuserland.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/propertylist.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/propertylist.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/thbs/realestate/SwaggerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thbs/realestate/SwaggerConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/thbs/realestate/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thbs/realestate/controller/AdminController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/thbs/realestate/controller/UserAdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thbs/realestate/controller/UserAdminController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/thbs/realestate/controller/UserRegistrationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thbs/realestate/controller/UserRegistrationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thbs/realestate/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thbs/realestate/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thbs/realestate/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thbs/realestate/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/thbs/realestate/controller/UserViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thbs/realestate/controller/UserViewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/thbs/realestate/model/Property.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thbs/realestate/model/Property.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/thbs/realestate/repository/PropertyRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thbs/realestate/repository/PropertyRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/thbs/realestate/service/PropertyServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thbs/realestate/service/PropertyServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/thbs/realestate/service/PropertyServiceInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thbs/realestate/service/PropertyServiceInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thbs/realestate/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thbs/realestate/service/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/thbs/realestate/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thbs/realestate/service/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/detailsuser.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/registration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/apartment.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/apartment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/details.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/detailsuserland.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/detailsuserland.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/propertylist.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/propertylist.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,11 +57,15 @@
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
       <map>
+        <entry key="JPA Inspector" value="true" />
+        <entry key="JPA Palette" value="true" />
         <entry key="JPA Structure" value="true" />
       </map>
     </option>
     <option name="myId2Visible">
       <map>
+        <entry key="JPA Inspector" value="false" />
+        <entry key="JPA Palette" value="false" />
         <entry key="JPA Structure" value="false" />
       </map>
     </option>
@@ -73,7 +80,19 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/img" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ashwini_hemegowda\Downloads\realest2\realestatepro (2)\realestatepro\src\main\resources\static\img" />
+      <recent name="C:\Users\ashwini_hemegowda\Downloads\realest2\realestatepro (2)\realestatepro\src\main\resources\templates" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.thbs.realestate.controller" />
+      <recent name="com.thbs.realestate.config" />
+      <recent name="com.thbs.realestate.service" />
+      <recent name="com.thbs.realestate.model" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Realest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -127,5 +146,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

@@ -95,6 +95,21 @@ public class PropertyServiceImpl implements PropertyServiceInterface {
 
     }
 
+    @Override
+    public List<Property> getByCategory(String category) {
+        return propertyRepository.findByCategoryIsStartingWith(category);
+    }
+
+    @Override
+    public List<Property> getByPropertyName(String propertyName) {
+        return propertyRepository.findByPropertyNameIsStartingWith(propertyName);
+    }
+
+    @Override
+    public List<Property> getByPrice(String price) {
+        return propertyRepository.findByPriceIsStartingWith(price);
+    }
+
     //Method to get property details filtered by Email
     public List<Property> useradd(String email)
     {

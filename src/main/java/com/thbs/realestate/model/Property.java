@@ -41,4 +41,27 @@ public class Property {
 
     private String email;
 
+    public Property(int propertyId, String category, String propertyName, String description, String price, String address, String facilities, String ownerName, long contactNo, String email) {
+        this.propertyId = propertyId;
+        this.category = category;
+        this.propertyName = propertyName;
+        this.description = description;
+        this.price = price;
+        this.address = address;
+        this.facilities = facilities;
+        this.ownerName = ownerName;
+        this.contactNo = contactNo;
+        this.email = email;
+    }
+
+    public Property(String category, String propertyName, String description, String price, String address, String facilities, String ownerName, long contactNo) {
+        this.category = category;
+        this.propertyName = propertyName;
+        this.description = description;
+        this.price = price;
+        this.address = address;
+        this.facilities = facilities;
+        this.ownerName = ownerName;
+        this.contactNo = contactNo;
+    }
 }
