@@ -1,5 +1,6 @@
 com\thbs\realestate\model\Role.class
 com\thbs\realestate\service\ViewServiceInterface.class
+com\thbs\realestate\service\WebSocketEventListener.class
 com\thbs\realestate\model\Property.class
 com\thbs\realestate\controller\MainController.class
 com\thbs\realestate\controller\UserRegistrationController.class
@@ -10,7 +11,11 @@ com\thbs\realestate\controller\AdminController.class
 com\thbs\realestate\service\PropertyServiceInterface.class
 com\thbs\realestate\service\UserService.class
 com\thbs\realestate\web\dto\UserRegistrationDto.class
+com\thbs\realestate\controller\ChatController.class
+com\thbs\realestate\model\ChatMessage$MessageType.class
 com\thbs\realestate\controller\UserViewController.class
+com\thbs\realestate\config\KafkaConfiguration.class
+com\thbs\realestate\config\WebSocketConfig.class
 com\thbs\realestate\model\MyUserDetails.class
 com\thbs\realestate\repository\PropertyRepository.class
 com\thbs\realestate\model\User.class
@@ -18,4 +23,5 @@ com\thbs\realestate\service\ViewServiceInterfaceImpl.class
 com\thbs\realestate\repository\UserRepository.class
 com\thbs\realestate\config\SecurityConfiguration.class
 com\thbs\realestate\controller\UserAdminController.class
+com\thbs\realestate\model\ChatMessage.class
 com\thbs\realestate\service\PropertyServiceImpl.class

@@ -5,6 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70cfd27a-aac3-4a2e-bc7c-3b3aed9c2279" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/config/KafkaConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/config/WebSocketConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/controller/ChatController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/model/ChatMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/service/WebSocketEventListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/exbg3.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/chat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/thbs/realestate/config/KafkaConfiguration.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/thbs/realestate/config/WebSocketConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/thbs/realestate/controller/ChatController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/thbs/realestate/model/ChatMessage$MessageType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/thbs/realestate/model/ChatMessage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/thbs/realestate/service/WebSocketEventListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/img/exbg3.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/chat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/thbs/realestate/RegistrationLoginSpringBootSecurityThymeleafApplicationTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thbs/realestate/controller/AdminController.java" afterDir="false" />
